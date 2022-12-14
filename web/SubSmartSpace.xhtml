@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./Template.xhtml">
+            <ui:define name="content">                
+            <form action="SaveSubSmartSpace.jsp" method="POST">
+                <h2>New Sub Smart Space</h2>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Smart Space</td>
+                        <td><input type="text" name="SmartSpace" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Classifier</td>
+                        <td><input type="text" name="classifier" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td><input type="text" name="description" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Feature Code</td>
+                        <td><input type="text" name="featureCode" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Identifier</td>
+                        <td><input type="text" name="identifier" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Keyword</td>
+                        <td><input type="text" name="keyword" value="" /></td>
+                    </tr>
+                     <tr>
+                        <td>Location Name</td>
+                        <td><input type="text" name="locationName" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Max Host</td>
+                        <td><input type="text" name="maxHost" value="" /></td>
+                    </tr>
+                    <tr>
+                        
+                        
+                        
+                        
+                        
+                        <td></td>
+                        <td><input width="100%" type="submit" value="Create" name="CreateSSS" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>

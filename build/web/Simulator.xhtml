@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <body>
+        
+        <ui:composition template="./Template.xhtml">
+            <ui:define name="content">
+                <h:form>
+                    <p:accordionPanel>
+                        <p:tab title="Input Variables">
+                            <h:panelGrid columns="2">
+                                <p:outputLabel value="max. Time" />
+                                <p:inputText value="#{simulatorWeb.maxTime}"/>   
+
+                                <p:outputLabel value="max. Virtual Things" />
+                                <p:inputText value="#{simulatorWeb.maxVirtualThings}"/>  
+                                <p:outputLabel value="Lambda Virtual Things" />
+                                <p:inputText value="#{simulatorWeb.lambdaVT}"/>  
+                                <p:outputLabel value="Prob. Dist. Function Virtual Things" />
+                                <p:inputText value="#{simulatorWeb.PDFVT}"/>  
+
+                                <p:outputLabel value="max. Virtual Sensors" />
+                                <p:inputText value="#{simulatorWeb.maxVirtualSensors}"/>
+                                <p:outputLabel value="Lambda Virtual Sensors" />
+                                <p:inputText value="#{simulatorWeb.lambdaVS}"/>  
+                                <p:outputLabel value="Prob. Dist. Function Virtual Sensors" />
+                                <p:inputText value="#{simulatorWeb.PDFVS}"/>                                 
+                            </h:panelGrid>                            
+                        </p:tab>
+                        <p:tab title="Excecution Controls">
+                            <h:panelGrid columns="3" >
+                                <p:commandButton id="Step" value="Step" action="#{simulatorWeb.Step()}" ajax="false" />
+                                <p:commandButton value="Start" action="#{simulatorWeb.Start()}" ajax="false"/>
+                                <!-- <p:commandButton value="Restore" action="#{simulatorWeb.RestoreP()}" ajax="false"/> -->
+                            </h:panelGrid>
+
+                                <p:panel>                                
+                                <p:outputLabel value="Time: #{simulatorWeb.time}" for="Step"/><br/>
+                                <p:outputLabel value="Movements per second: #{simulatorWeb.thingMps}" for="Step"/><br/>
+                                <p:outputLabel value="Changes per second: #{simulatorWeb.thingSps}" for="Step"/>
+                                </p:panel>
+
+                        </p:tab>
+                    </p:accordionPanel>
+
+                </h:form> 
+            </ui:define>
+        </ui:composition>
+        
+    </body>
+</html>

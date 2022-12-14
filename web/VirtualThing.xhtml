@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./Template.xhtml">
+
+            <ui:define name="content">
+            <form action="SaveVirtualThing.jsp" method="POST">
+            <h2>New Virtual Thing</h2>
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Sub Smart Space</td>
+                        <td><input type="text" name="SubSmartSpace" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td><input type="text" name="description" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Identifier</td>
+                        <td><input type="text" name="identifier" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Keyword</td>
+                        <td><input type="text" name="keyword" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td><input type="text" name="category" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Alernate Name</td>
+                        <td><input type="text" name="alternateName" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td><input type="text" name="image" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Potential Action</td>
+                        <td><input type="text" name="potentialAction" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text" name="state" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Events</td>
+                        <td><input type="text" name="events" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Characteristics</td>
+                        <td><input type="text" name="characteristics" value="" /></td>
+                    </tr>                    
+                    <tr>
+                        <td></td>
+                        <td><input width="100%" type="submit" value="Create" name="CreateB" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

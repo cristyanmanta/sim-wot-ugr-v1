@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+        <ui:composition template="./Template.xhtml">
+            <ui:define name="content">
+            <form action="SaveSmartSpace.jsp" method="POST">
+                <h2>New Smart Space</h2>
+                <table border="0">              
+                    <tbody>
+                        <tr>
+                            <td>Intelligent Zone</td>
+                            <td><input type="text" name="IntelligentZone" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Classifier</td>
+                            <td><input type="text" name="Classifier" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td><input type="text" name="Description" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Elevation</td>
+                            <td><input type="text" name="Elevation" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Feature Code</td>
+                            <td><input type="text" name="FeatureCode" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Geo Class</td>
+                            <td><input type="text" name="GeoClass" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Identifier</td>
+                            <td><input type="text" name="Identifier" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Keyword</td>
+                            <td><input type="text" name="Keyword" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Latitude</td>
+                            <td><input type="text" name="Latitude" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Longitude</td>
+                            <td><input type="text" name="Longitude" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Location Name</td>
+                            <td><input type="text" name="LocationName" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" name="Address" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Create" name="CreateB" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>
